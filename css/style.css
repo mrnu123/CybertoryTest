@@ -187,7 +187,7 @@ h1#service-dot{
     display: block;
     max-height: 100%;
     max-width:60%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* margin-right: 40px;; */
 }
 h2.title{
@@ -205,6 +205,40 @@ p.title{
 img.service-icon{
     margin-top: 20px    ;
 }
+section#count{
+    background-image: url("../img/bg_coffee.jpg");
+    background-attachment: fixed;
+    display:flex;
+    justify-content: center;
+    direction:row;
+    /* width: 100%; */
+    /* height: 100vh; */
+}
+section#count .row{
+    display: flex;
+    width: 80%;
+    direction:row;
+    justify-content: center;
+    margin: 20px;
+    
+}
+div.count{
+margin-left: 50px;
+margin-right: 10px;
+}
+
+.count span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+p.count{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media(max-width:60em){
     #service .service-mobile{
         /* display:block; */
