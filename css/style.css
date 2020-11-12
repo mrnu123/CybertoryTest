@@ -1,0 +1,269 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+     font-family: 'Kanit', sans-serif; 
+    background-image: url("../img/bg.webp");
+    /* opacity: 0.9; */
+    /* Set a specific height */
+    min-height: 100%;
+    min-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    background-size: cover;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    /* background-color: black; */
+}
+.header .logo{
+    float: left;
+    font-size:1.5em;
+    /* padding:5px 70px; */
+    display: block;
+    margin-left: 15%;
+    color: white;
+}
+.header ul{
+margin-top:20;
+padding:0;
+list-style: none;
+
+}
+
+
+a {
+    color: white;
+    max-height: 0;
+}
+
+li{
+    display: block;
+    padding:5px;
+}
+.header .menu {
+    display:block;
+    color: white;
+    clear: both;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section#home{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  
+    width: 100%;
+}
+
+section#service{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    display:flex;
+    background-color:white;
+    height:800;
+    /* background-size: cover;
+    max-height:100% */
+}
+
+h1#home{
+    color:white;
+    font-weight: bold;
+    font-size: 1.5em;
+    
+}
+#home p{
+    color:white;
+    letter-spacing:2px;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border:2px solid;
+    border-color:white;
+    stroke-width: 20;
+    margin-right:10px;
+    visibility: hidden;
+}
+
+.btn-primary{
+    background-color:white;
+    border:2px solid white;
+    stroke-width: 20;
+    color:#2c2c2c;
+    
+}
+
+.btn-primary:hover{
+    background-color:#4a4a4a;
+    border:2px solid #4a4a4a;
+    stroke-width: 20;
+    color:white;
+}
+.btn-primary:active{
+    background-color:#4a4a4a;
+    border:2px solid #4a4a4a;
+    stroke-width: 20;
+    color:white;
+}
+
+label.label-group{
+    display:flex;
+    flex-direction: column;
+    margin-top: -40px;
+}
+label.service-com{
+    display:flex;
+    float: left;
+    flex-direction: row;
+}
+#service .service-mobile{
+    display:flex;
+    float: left;
+    margin-top:-65px;
+    visibility: hidden;
+    direction:row;
+}
+
+#service .service-com{
+    display:flex;
+    visibility: hidden;
+    direction:row;
+}
+.service{
+    display:flex;
+    /* float: right; */
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    direction:row;
+    width:100%;
+}
+h1#service-com{
+    font-size: 1.5em;
+    letter-spacing:5px;
+}
+.service-com h1#service-dot{
+    font-size: 1.5em;
+    letter-spacing:5px;
+}
+h1#service-dot{
+    color:orange;
+    
+}
+
+
+#web-design{
+    word-wrap:break-word;
+}
+#development{
+    word-wrap:break-word;
+}
+#branding{
+    word-wrap: break-word;
+}
+.row{
+    display: block;
+    max-height: 100%;
+    max-width:60%;
+    margin-top: 20px;
+    /* margin-right: 40px;; */
+}
+h2.title{
+    margin-top:10px;
+    font-size: .8em;
+    font-weight: bold;
+}
+p.title{
+    color: #4a4a4a;
+}
+.service-icon{
+    width:40px;
+    height: 40px;
+}
+img.service-icon{
+    margin-top: 20px    ;
+}
+@media(max-width:60em){
+    #service .service-mobile{
+        /* display:block; */
+        float: left;
+        margin-top:65px;
+        padding:20px;
+        visibility: visible;
+    }
+
+}
+
+
+@media(min-width:60em){
+    section#service{
+        height:100vh;
+    }
+    .service-menu{
+        display:flex;
+        direction:row;
+        max-width:100%;
+
+    }
+    #service .service-com{
+        visibility: visible;
+        letter-spacing:3px;
+    }
+    #home p{
+        color:white;
+        letter-spacing:0px;
+    }
+    
+    h1#home{
+        letter-spacing:3px;
+    }
+    label.label-group{
+        display:flex;
+        flex-direction: row;
+        margin-top:0px;
+    }
+    .btn-secondary{
+        visibility:visible;
+    }
+    .header .logo{
+        padding:5px 0px;
+    }
+    .header li{
+        float: left;
+        margin-right: 20px;
+    }
+   .header a:hover{
+       color:#ccc;  
+       text-decoration: none;
+   }
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+        margin-top: 5px;
+        font-size: .8em;
+        margin-right:15%;
+    }
+}
